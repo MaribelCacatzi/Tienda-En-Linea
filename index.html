@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Chic</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegacion -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation" style="color: rgb(106 17 203);">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand fs-4 fw-bold text-white" href="#">TiendaChic</a>
+                <!-- Iconos para pantalla pequeña -->
+                <div class="d-lg-none d-flex align-items-center">
+                    <ul class="d-flex list-unstyled  gap-3 mb-0 iconos">
+                        <li class="nav-item fs-6 text-white"><i class="bi bi-search"></i></li>
+                        <li class="nav-item fs-6 text-white"><i class="bi bi-person"></i></li>
+                        <li class="nav-item fs-6 text-white">
+                            <i class="bi bi-heart"></i>
+                            <span class="position-absolute top-2 translate-middle badge rounded-pill bg-danger">2</span></li>
+                        <li class="nav-item fs-6 text-white">
+                            <i class="bi bi-cart"></i>
+                            <span class="position-absolute top-2 translate-middle badge rounded-pill bg-danger">3</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#categorias">Categorías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- iconos para pantalla grande -->
+                <div class="d-lg-flex d-none align-items-center ">
+                    <ul class="d-flex list-unstyled  gap-3 mb-0 iconos">
+                        <li class="nav-item fs-6 text-white"><i class="bi bi-search"></i></li>
+                        <li class="nav-item fs-6 text-white"><i class="bi bi-person"></i></li>
+                        <li class="nav-item fs-6 text-white">
+                            <i class="bi bi-heart"></i>
+                            <span class="position-absolute top-2 translate-middle badge rounded-pill bg-danger">2</span>
+                        </li>
+                        <li class="nav-item fs-6 text-white">
+                            <i class="bi bi-cart"></i>
+                            <span class="position-absolute top-2 translate-middle badge rounded-pill bg-danger">3</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Seccion de inicio -->
+        <div class="container-fluid principal">
+            <div class="container pt-5 pt-md-0" style="height: auto;">
+                <div class="d-flex flex-column flex-md-row h-100">
+                    <div class="d-flex flex-column text-white justify-content-center">
+                        <h1 class="fw-bold">Descubre las últimas tendencias</h1>
+                        <p>Encuentra todo lo que necesitas con los mejores precios y calidad garantizada.</p>
+                        <div class="d-flex gap-3">
+                            <button type="button" class="btn btn-light Textpurple">Comprar ahora</button>
+                            <button type="button" class="btn btn-outline-light ">Ver catálogo</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 m-5">
+                        <img src="./imagen1.jpg" alt="moda" class="rounded-3 w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Seccion de categorias populares -->
+        <div class="container-fluid" style="background-color: rgb(249 250 251 );" id="categorias">
+            <h2 class="text-center fw-bold p-5">Categorías populares</h2>
+            <div class="container">
+                <div class="row gy-3 pb-5">
+                    <div class="col-6 col-sm-3">
+                        <div class="card shadow">
+                            <img src="./sudader.jpg_720x720q50.avif" class="card-img-top" alt="sudadero">
+                            <div class="card-body">
+                                <h5 class="card-title">Ropa</h5>
+                                <a href="#" class="text-decoration-none Textpurple verProductos">Ver productos <i class="bi bi-chevron-right fw-bold"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 ">
+                        <div class="card shadow">
+                            <img src="./calzado.avif" class="card-img-top" alt="calzado">
+                            <div class="card-body">
+                                <h5 class="card-title">Calzado</h5>
+                                <a href="#" class="text-decoration-none Textpurple verProductos">Ver productos <i class="bi bi-chevron-right fw-bold"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card shadow">
+                            <img src="./accesorios.avif" class="card-img-top" alt="accesorios">
+                            <div class="card-body">
+                                <h5 class="card-title">Accesorios</h5>
+                                <a href="#" class="text-decoration-none Textpurple verProductos">Ver productos <i class="bi bi-chevron-right fw-bold"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card shadow">
+                            <img src="./electronica.avif" class="card-img-top h-25" alt="electronica">
+                            <div class="card-body">
+                                <h5 class="card-title">Electrónica</h5>
+                                <a href="#" class="text-decoration-none Textpurple verProductos">Ver productos <i class="bi bi-chevron-right fw-bold"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- Seccion filtrar productos -->
+        <div class="container">
+            <div class="row mb-5 gap-3">
+                <div class="row">
+                    <div class="col-12 col-md-5 d-flex align-items-center mt-3">
+                        <p class="fw-bold fs-5">Filtrar productos</p>
+                    </div>
+                    <div class="col-12 col-md-7 d-md-flex gap-2">
+                        <div class="col-12 col-sm-6 col-md-3 mt-md-3">
+                            <label for="" style="color: rgb(68, 68, 68); font-weight: 400;">Categoría</label>
+                            <select class="form-select border-2 w-100" aria-label="Default select example">
+                                <option selected>Todas las Categorías</option>
+                                <option value="ropa">Ropa</option>
+                                <option value="calzado">Calzado</option>
+                                <option value="accesorios">Accesorios</option>
+                                <option value="electronica">Electrónica</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mt-3">
+                            <label for="" style="color: rgb(68, 68, 68); font-weight: 400;">Precio</label>
+                            <select class="form-select border-2" aria-label="Default select example">
+                                <option selected>Todas los precios</option>
+                                <option value="1">$0 - $25</option>
+                                <option value="2">$25 - $50</option>
+                                <option value="3">$50 - $100</option>
+                                <option value="3">$100+</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mt-3">
+                            <label for="" style="color: rgb(68, 68, 68); font-weight: 400;">Ordenar por</label>
+                            <select class="form-select border-2" aria-label="Default select example">
+                                <option selected>Destacados</option>
+                                <option value="menor a mayor">Precio: Menor a Mayor</option>
+                                <option value="mayor a menor">Precio: Mayor a Menor</option>
+                                <option value="recientes">Más recientes</option>
+                            </select>
+                        </div>
+                        <div class="col d-flex flex-column align-self-end mt-4">
+                            <button type="button" class="btn  text-white" style="background-color:rgb(106 17 203);">Aplicar
+                                Filtros</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-auto d-flex gap-1">
+                        <span class="badge rounded-pill Textpurple"style="background-color: rgb(106 17 203/var(--tw-bg-opacity,0.1));">Ropa ×</span>
+                        <span class="badge rounded-pill  Textpurple" style="background-color: rgb(106 17 203/var(--tw-bg-opacity,0.1));">$25 - $50×</span>
+                    </div>
+                    <div class="col-sm-auto">
+                        <span class="Textpurple textolimpiarfiltros" style="font-size: 0.9rem;">Limpiar todos los filtros</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-5">
+        <!-- Seccion productos destacados -->
+        <div class="container" id="productos">
+            <div class="row gy-4">
+                <h2 class="fw-bold text-center mb-3">Productos destacados</h2>
+                <div class="col-12 col-md-4 col-lg-3 ">
+                    <div class="card TarjetasShadow">
+                        <span class="badge text-bg-danger w-25 position-absolute mt-2 ms-2">Oferta</span>
+                        <div class="mt-3 position-absolute end-0">
+                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
+                                    class="bi bi-heart"></i></span>
+                        </div>
+                        <img src="camisetacasual.avif"
+                            class="card-img-top" alt="camiseta casual" style="height: 250px;">
+                        <div class="card-body " style="line-height: 2rem;">
+                            <h6 class="card-title">Camiseta casual</h6>
+                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$59.99 </span>
+                            <span class="text-decoration-line-through text-muted">$29.99</span>
+                            <p><a href="#" class="btn w-100 text-white" style="background-color: rgb(106 17 203);">Añadir al
+                                    carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card TarjetasShadow" >
+                        <div class="mt-3 position-absolute end-0">
+                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
+                                    class="bi bi-heart"></i></span>
+                        </div>
+                        <img src="zapatillaDeportiva.avif"
+                            class="card-img-top" alt="zapatilla deportivas" style="height: 250px;">
+                        <div class="card-body" style="line-height: 2rem;">
+                            <h6 class="card-title">Zapatillas Deportivas</h6>
+                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$24.99</span>
+                            <p><a href="#" class="btn w-100 text-white"
+                                    style="background-color: rgb(106 17 203);">Añadir al
+                                    carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card TarjetasShadow">
+                        <span class="badge text-bg-danger w-25 position-absolute mt-2 ms-2">Oferta</span>
+                        <div class="mt-3 position-absolute end-0">
+                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
+                                    class="bi bi-heart"></i></span>
+                        </div>
+                        <img src="relojE.avif"
+                            class="card-img-top" alt="reloj elegante" style="height: 250px;">
+                        <div class="card-body" style="line-height: 2rem;">
+                            <h6 class="card-title">Reloj Elegante</h6>
+                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$89.99</span>
+                            <span class="text-decoration-line-through text-muted">$120.00</span>
+                            <p><a href="#" class="btn w-100 text-white"
+                                    style="background-color: rgb(106 17 203);">Añadir al
+                                    carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card TarjetasShadow" >
+                        <div class="mt-3 position-absolute end-0">
+                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
+                                    class="bi bi-heart"></i></span>
+                        </div>
+                        <img src="bolso.avif"
+                            class="card-img-top" alt="bolso de mano" style="height: 250px;">
+                        <div class="card-body" style="line-height: 2rem;">
+                            <h6 class="card-title">Bolso de Mano</h6>
+                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$45.99</span>
+                            <p><a href="#" class="btn w-100 text-white"
+                                    style="background-color: rgb(106 17 203);">Añadir al
+                                    carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card TarjetasShadow">
+                        <span class="badge text-bg-danger w-25 position-absolute mt-2 ms-2">Oferta</span>
+                        <div class="mt-3 position-absolute end-0">
+                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
+                                    class="bi bi-heart"></i></span>
+                        </div>
+                        <img src="auriculares.avif"
+                            class="card-img-top" alt="auriculares" style="height: 250px;">
+                        <div class="card-body" style="line-height: 2rem;">
+                            <h6 class="card-title">Auriculares Bluetooth</h6>
+                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$79.99</span>
+                            <span class="text-decoration-line-through text-muted">$99.99</span>
+                            <p><a href="#" class="btn w-100 text-white"
+                                    style="background-color: rgb(106 17 203);">Añadir al
+                                    carrito</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card TarjetasShadow" >
+                        <div class="mt-3 position-absolute end-0">
+                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
+                                    class="bi bi-heart"></i></span>
+                        </div>
+                        <img src="gafas.avif"
+                            class="card-img-top" alt="gafas" style="height: 250px;">
+                        <div class="card-body" style="line-height: 2rem;">
+                            <h6 class="card-title">Gafas de Sol</h6>
+                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$34.99</span>
+                            <p><a href="#" class="btn w-100 text-white"
+                                    style="background-color: rgb(106 17 203);">Añadir al
+                                    carrito</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card TarjetasShadow" >
+                        <div class="mt-3 position-absolute end-0">
+                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
+                                    class="bi bi-heart"></i></span>
+                        </div>
+                        <img src="chaqueta.avif"
+                            class="card-img-top" alt="chaqueta de invierno" style="height: 250px;">
+                        <div class="card-body" style="line-height: 2rem;">
+                            <h6 class="card-title">Chaqueta de Invierno</h6>
+                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$129.99</span>
+                            <p><a href="#" class="btn w-100 text-white"
+                                    style="background-color: rgb(106 17 203);">Añadir al
+                                    carrito</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card TarjetasShadow">
+                        <span class="badge text-bg-danger w-25 position-absolute mt-2 ms-2">Oferta</span>
+                        <div class="mt-3 position-absolute end-0">
+                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
+                                    class="bi bi-heart"></i></span>
+                        </div>
+                        <img src="smarthphone.avif"
+                            class="card-img-top" alt="Smartphone" style="height: 250px;">
+                        <div class="card-body" style="line-height: 2rem;">
+                            <h6 class="card-title">Smartphone</h6>
+                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$399.99</span>
+                            <span class="text-decoration-line-through text-muted">$499.99</span>
+                            <p><a href="#" class="btn w-100 text-white"
+                                    style="background-color: rgb(106 17 203);">Añadir al
+                                    carrito</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seccion suscribete a nuestro boletin -->
+        <div class="container-fluid" style="background-color: rgb(249 250 251 );">
+            <hr class="mt-5">
+            <div class="container justify-content-center mt-5 pb-5">
+                <h2 class="fw-bold text-center"> Suscríbete a nuestro boletín</h2>
+                <p class="text-center text-muted">Recibe las últimas novedades y ofertas exclusivas directamente en tu
+                    correo.</p>
+                <form class="row g-3 justify-content-center">
+                    <div class="col-12 col-md-6">
+                        <input type="text" class="form-control" id="inputPassword2" placeholder="Tu correo electrónico" >
+                    </div>
+                    <div class="col-md-auto d-inline">
+                        <button type="submit" class="btn text-white mb-3 btnSuscribir w-100">Suscribirse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-12 col-sm-3">
+                            <p class="fw-bold fs-5 text-white">TiendaChic</p>
+                            <p>Tu tienda de confianza para encontrar los mejores productos con la mejor calidad</p>
+                        </div>
+                        <div class="col-12 col-sm-3">
+                            <ul class="list-unstyled lh-lg ulHover">
+                                <p class="fw-bold text-white">Enlaces rápidos</p>
+                                <li>Inicio</li>
+                                <li>Productos</li>
+                                <li>Categorías</li>
+                                <li>Ofertas</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-3">
+                            <ul class="list-unstyled lh-lg ulHover">
+                                <p class="fw-bold text-white">Ayuda</p>
+                                <li>FAQ</li>
+                                <li>Envíos</li>
+                                <li>Devoluciones</li>
+                                <li>Contacto</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-3" id="contacto">
+                            <ul class="list-unstyled lh-lg">
+                                <p class="fw-bold text-white">Contacto</p>
+                                <li>Calle Comercio 123 Ciudad, CP 12345</li>
+                                <li>Email: info@tiendachic.com</li>
+                                <li>Teléfono: (123) 456-7890</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="mb-3">
+                    <div class="d-flex justify-content-center">
+                        <p class="mb-4 p-1 text-center"><i class="bi bi-c-circle"></i>2025 TiendaChic. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- </div> -->
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

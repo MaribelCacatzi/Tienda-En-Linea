@@ -1,0 +1,42 @@
+header{
+    background-color: rgb(106 17 203);
+}
+
+.principal{
+    background: linear-gradient(90deg, rgb(106,17,203), #2575fc);
+}
+
+.btn-comprar{
+    color: rgb(106 17 203);
+}
+
+.btnSuscribir{
+    background-color: rgb(106 17 203) !important;
+}
+
+.Textpurple{
+    color: rgb(106 17 203) !important;
+}
+
+footer{
+    color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+    background-color: rgb(31 41 55/var(--tw-bg-opacity,1));
+}
+
+.ulHover > li:hover{
+    color: white !important;
+    cursor: pointer;
+}
+
+.TarjetasShadow:hover{
+    box-shadow:  0px 0px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.textolimpiarfiltros:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.iconos>li:hover, .verProductos:hover{
+    cursor: pointer;
+}
