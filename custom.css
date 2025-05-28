@@ -40,3 +40,8 @@ footer{
 .iconos>li:hover, .verProductos:hover{
     cursor: pointer;
 }
+
+.AñadirAlCarrito{
+    background-color: rgb(106 17 203) !important;
+    color: white !important;
+}
