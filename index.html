@@ -197,7 +197,19 @@
         <hr class="mt-5">
         <!-- Seccion productos destacados -->
         <div class="container" id="productos">
-            <div class="row gy-4">
+            <div class="row" id="RowProductos">    
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Productos Añadidos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="ContenedorCanva">
+                        
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="row gy-4">
                 <h2 class="fw-bold text-center mb-3">Productos destacados</h2>
                 <div class="col-12 col-md-4 col-lg-3 ">
                     <div class="card TarjetasShadow">
@@ -346,7 +358,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- Seccion suscribete a nuestro boletin -->
@@ -418,7 +430,8 @@
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+    <script src="app.js"></script>
 </body>
 
 </html>
