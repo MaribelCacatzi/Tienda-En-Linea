@@ -196,169 +196,19 @@
         </div>
         <hr class="mt-5">
         <!-- Seccion productos destacados -->
-        <div class="container" id="productos">
-            <div class="row" id="RowProductos">    
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Productos Añadidos</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body" id="ContenedorCanva">
-                        
-                    </div>
-                </div>
+        <div class="container d-flex justify-content-center" id="productos">
+            <div class="spinner-border text-warning" role="status" id="spiner"></div>
 
+            <div class="row" id="RowProductos"></div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Productos Añadidos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="ContenedorCanva">
+                    
+                </div>
             </div>
-            <!-- <div class="row gy-4">
-                <h2 class="fw-bold text-center mb-3">Productos destacados</h2>
-                <div class="col-12 col-md-4 col-lg-3 ">
-                    <div class="card TarjetasShadow">
-                        <span class="badge text-bg-danger w-25 position-absolute mt-2 ms-2">Oferta</span>
-                        <div class="mt-3 position-absolute end-0">
-                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
-                                    class="bi bi-heart"></i></span>
-                        </div>
-                        <img src="camisetacasual.avif"
-                            class="card-img-top" alt="camiseta casual" style="height: 250px;">
-                        <div class="card-body " style="line-height: 2rem;">
-                            <h6 class="card-title">Camiseta casual</h6>
-                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$59.99 </span>
-                            <span class="text-decoration-line-through text-muted">$29.99</span>
-                            <p><a href="#" class="btn w-100 text-white" style="background-color: rgb(106 17 203);">Añadir al
-                                    carrito</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="card TarjetasShadow" >
-                        <div class="mt-3 position-absolute end-0">
-                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
-                                    class="bi bi-heart"></i></span>
-                        </div>
-                        <img src="zapatillaDeportiva.avif"
-                            class="card-img-top" alt="zapatilla deportivas" style="height: 250px;">
-                        <div class="card-body" style="line-height: 2rem;">
-                            <h6 class="card-title">Zapatillas Deportivas</h6>
-                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$24.99</span>
-                            <p><a href="#" class="btn w-100 text-white"
-                                    style="background-color: rgb(106 17 203);">Añadir al
-                                    carrito</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="card TarjetasShadow">
-                        <span class="badge text-bg-danger w-25 position-absolute mt-2 ms-2">Oferta</span>
-                        <div class="mt-3 position-absolute end-0">
-                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
-                                    class="bi bi-heart"></i></span>
-                        </div>
-                        <img src="relojE.avif"
-                            class="card-img-top" alt="reloj elegante" style="height: 250px;">
-                        <div class="card-body" style="line-height: 2rem;">
-                            <h6 class="card-title">Reloj Elegante</h6>
-                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$89.99</span>
-                            <span class="text-decoration-line-through text-muted">$120.00</span>
-                            <p><a href="#" class="btn w-100 text-white"
-                                    style="background-color: rgb(106 17 203);">Añadir al
-                                    carrito</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="card TarjetasShadow" >
-                        <div class="mt-3 position-absolute end-0">
-                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
-                                    class="bi bi-heart"></i></span>
-                        </div>
-                        <img src="bolso.avif"
-                            class="card-img-top" alt="bolso de mano" style="height: 250px;">
-                        <div class="card-body" style="line-height: 2rem;">
-                            <h6 class="card-title">Bolso de Mano</h6>
-                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$45.99</span>
-                            <p><a href="#" class="btn w-100 text-white"
-                                    style="background-color: rgb(106 17 203);">Añadir al
-                                    carrito</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="card TarjetasShadow">
-                        <span class="badge text-bg-danger w-25 position-absolute mt-2 ms-2">Oferta</span>
-                        <div class="mt-3 position-absolute end-0">
-                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
-                                    class="bi bi-heart"></i></span>
-                        </div>
-                        <img src="auriculares.avif"
-                            class="card-img-top" alt="auriculares" style="height: 250px;">
-                        <div class="card-body" style="line-height: 2rem;">
-                            <h6 class="card-title">Auriculares Bluetooth</h6>
-                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$79.99</span>
-                            <span class="text-decoration-line-through text-muted">$99.99</span>
-                            <p><a href="#" class="btn w-100 text-white"
-                                    style="background-color: rgb(106 17 203);">Añadir al
-                                    carrito</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="card TarjetasShadow" >
-                        <div class="mt-3 position-absolute end-0">
-                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
-                                    class="bi bi-heart"></i></span>
-                        </div>
-                        <img src="gafas.avif"
-                            class="card-img-top" alt="gafas" style="height: 250px;">
-                        <div class="card-body" style="line-height: 2rem;">
-                            <h6 class="card-title">Gafas de Sol</h6>
-                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$34.99</span>
-                            <p><a href="#" class="btn w-100 text-white"
-                                    style="background-color: rgb(106 17 203);">Añadir al
-                                    carrito</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="card TarjetasShadow" >
-                        <div class="mt-3 position-absolute end-0">
-                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
-                                    class="bi bi-heart"></i></span>
-                        </div>
-                        <img src="chaqueta.avif"
-                            class="card-img-top" alt="chaqueta de invierno" style="height: 250px;">
-                        <div class="card-body" style="line-height: 2rem;">
-                            <h6 class="card-title">Chaqueta de Invierno</h6>
-                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$129.99</span>
-                            <p><a href="#" class="btn w-100 text-white"
-                                    style="background-color: rgb(106 17 203);">Añadir al
-                                    carrito</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="card TarjetasShadow">
-                        <span class="badge text-bg-danger w-25 position-absolute mt-2 ms-2">Oferta</span>
-                        <div class="mt-3 position-absolute end-0">
-                            <span class="d-flex justify-content-end translate-middle badge rounded-pill bg-white text-black"><i
-                                    class="bi bi-heart"></i></span>
-                        </div>
-                        <img src="smarthphone.avif"
-                            class="card-img-top" alt="Smartphone" style="height: 250px;">
-                        <div class="card-body" style="line-height: 2rem;">
-                            <h6 class="card-title">Smartphone</h6>
-                            <span class="card-text fw-bold " style="color: rgb(106 17 203);">$399.99</span>
-                            <span class="text-decoration-line-through text-muted">$499.99</span>
-                            <p><a href="#" class="btn w-100 text-white"
-                                    style="background-color: rgb(106 17 203);">Añadir al
-                                    carrito</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
 
         <!-- Seccion suscribete a nuestro boletin -->
